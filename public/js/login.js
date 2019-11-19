@@ -1,6 +1,6 @@
 const form = document.querySelector('.login-form');
-const email = document.querySelector('#email');
-const password = document.querySelector('#password');
+const email = document.querySelector('#emailLog');
+const password = document.querySelector('#passwordLog');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
@@ -21,7 +21,8 @@ function login() {
     }
   };
 
-  $.ajax(settings).done(function(response) {
-    console.log(response);
-  });
+  routeProduct();
+  // $.ajax(settings).done(function(response) {
+  //   console.log(response);
+  // });
 }

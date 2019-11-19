@@ -11,22 +11,88 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <div class="login-page">
-      <div class="form">
-        <form class="login-form">
-          <input type="text" placeholder="username" />
-          <input type="password" placeholder="password" />
-          <button class="btn btn-success">login</button>
-          <p class="message">
-            Not registered?
-            <button class="btn btn-link text-success" onclick="routeRegister()">
-              Create an account
+  <body style="background-color: #79b956;">
+    <div class="container mt-5 w-50">
+      <div class="card text-center shadow p-3 mb-5 bg-white">
+        <div class="card-body">
+          <h2 class="card-title">Register</h2>
+          <div class="row">
+            <div class="form-group col-6">
+              <label for="email" class="float-left text-muted">Email</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="form-group col-6">
+              <label for="password" class="float-left text-muted"
+                >Password</label
+              >
+              <input type="password" class="form-control" id="password" />
+            </div>
+            <div class="form-group col-12">
+              <label for="nombre" class="float-left text-muted"
+                >Nombre Completo</label
+              >
+              <input type="text" class="form-control" id="nombre" />
+            </div>
+            <div class="form-group col-4">
+              <label for="edad" class="float-left text-muted">Edad</label>
+              <input type="number" class="form-control" id="edad" />
+            </div>
+            <div class="form-group col-8">
+              <label for="sexo" class="float-left text-muted">Sexo</label>
+              <select id="sexo" class="form-control">
+                <option selected>FEMENINO</option>
+                <option>MASCULINO</option>
+                <option>OTRO</option>
+              </select>
+            </div>
+            <div class="form-group col-4">
+              <label for="ciudad" class="float-left text-muted">Ciudad</label>
+              <input type="text" class="form-control" id="ciudad" />
+            </div>
+            <div class="form-group col-8">
+              <label for="direccion" class="float-left text-muted"
+                >Direccion</label
+              >
+              <input type="text" class="form-control" id="direccion" />
+            </div>
+            <div class="form-group col-6">
+              <label for="estadoCivil" class="float-left text-muted"
+                >Estado Civil</label
+              >
+              <select id="estadoCivil" class="form-control">
+                <option selected>SOLTERO/A</option>
+                <option>CASADO/A</option>
+                <option>DIVORCIADO/A</option>
+                <option>VIUDO/A</option>
+              </select>
+            </div>
+            <div class="form-group col-6">
+              <label for="profesion" class="float-left text-muted"
+                >Profesion</label
+              >
+              <select id="profesion" class="form-control">
+                <option selected>ESTUDIANTE</option>
+                <option>DESEMPLEADO</option>
+                <option>INDEPENDIENTE</option>
+                <option>EMPLEADO</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-success mt-5 mb-2" onclick="registrar()">
+            Register
+          </button>
+
+          <p class="text-muted">
+            Ya estas registrado?
+            <button
+              class="btn btn-link text-success p-0 m-0"
+              onclick="routeLogin()"
+            >
+              Log in
             </button>
           </p>
-        </form>
+        </div>
       </div>
     </div>
 
@@ -41,7 +107,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/login.js"></script>
     <script src="./js/routes.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
