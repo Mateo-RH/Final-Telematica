@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login</title>
+    <title>Register</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,20 +16,16 @@
   <body>
     <div class="login-page">
       <div class="form">
-        <h4 class="mb-4">Login</h4>
-        <form class="login-form">
-          <input type="text" placeholder="email" id="email" />
-          <input type="password" placeholder="password" id="password" />
-          <button class="btn btn-success" onclick="login()" id="loginButton">
-            login
-          </button>
-          <p class="message">
-            Not registered?
-            <button class="btn btn-link text-success" onclick="routeRegister()">
-              Create an account
-            </button>
-          </p>
-        </form>
+        <h2 class="mb-4">Error</h2>
+        <p>
+          You must
+          <button
+            class="btn btn-link text-success p-0 m-0"
+            onclick="routeLogin()"
+          >
+            log in</button
+          >.
+        </p>
       </div>
     </div>
 
@@ -44,7 +40,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/login.js"></script>
     <script src="./js/routes.js"></script>
   </body>
 </html>
