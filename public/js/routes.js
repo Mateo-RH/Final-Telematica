@@ -6,8 +6,8 @@ function routeLogin() {
   window.location.href = 'index.html';
 }
 
-function routeOpinion() {
-  window.location.href = 'opinion.html';
+function routeOpinion(id) {
+  window.location.href = `opinion.html?producto=${id}`;
 }
 
 function routeProduct() {
