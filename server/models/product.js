@@ -10,7 +10,7 @@ let productSchema = new Schema({
     required: [true, 'El nombre es necesario']
   },
   opiniones: {
-    type: [{ cliente: String, opinion: String }],
+    type: [{ cliente: Schema.Types.ObjectId, opinion: String }],
     required: true,
     default: []
   }

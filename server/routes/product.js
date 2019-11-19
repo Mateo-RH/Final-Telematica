@@ -23,7 +23,7 @@ app.get('/product', [verificaToken, cors()], function(req, res) {
           err
         });
       }
-      Product.count({}, (err, conteo) => {
+      Product.countDocuments({}, (err, conteo) => {
         res.json({
           error: false,
           total: conteo,
@@ -116,7 +116,6 @@ app.delete('/product/:id', [verificaToken, cors()], function(req, res) {
   });
 });
 
-// FIXME: esto
 app.put('/product/:id', [verificaToken, cors()], function(req, res) {
   let id = req.params.id;
   let cliente = req.client._id;
@@ -141,18 +140,23 @@ app.put('/product/:id', [verificaToken, cors()], function(req, res) {
 
     let clientes = productDB.opiniones.map(opinion => opinion.cliente);
 
-    // if (clientes.includes(cliente)) {
-    //   return res.status(400).json({
-    //     error: true,
-    //     err: {
-    //       message: 'Cliente ya opino'
-    //     }
-    //   });
-    // }
-    let opinionCliente = { cliente: toString(cliente), opinion };
-    productDB.opiniones.push(opinionCliente);
+    if (clientes.includes(cliente)) {
+      return res.status(400).json({
+        error: true,
+        err: {
+          message: 'Cliente ya opino'
+        }
+      });
+    }
 
+    productDB.opiniones.push({ cliente, opinion });
     productDB.save((err, propiedadGuardada) => {
+      if (err) {
+        return res.status(500).json({
+          error: true,
+          err
+        });
+      }
       res.json({
         error: false,
         propiedad: propiedadGuardada
