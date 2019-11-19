@@ -51,7 +51,7 @@ let clientSchema = new Schema({
   profesion: {
     type: String,
     required: [true, 'La profesion es necesaria'],
-    profesiones
+    enum: profesiones
   }
 });
 

@@ -10,13 +10,13 @@ let productSchema = new Schema({
     required: [true, 'El nombre es necesario']
   },
   opiniones: {
-    type: [{ cliente: Schema.Types.ObjectId, opinion: String }],
+    type: [{ cliente: String, opinion: String }],
     required: true,
     default: []
   }
 });
 
-clientSchema.plugin(uniqueValidator, {
+productSchema.plugin(uniqueValidator, {
   message: '{PATH} debe de ser unico'
 });
 
