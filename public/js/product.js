@@ -19,7 +19,7 @@ function validarToken() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://vaso-system.tk/validaToken',
+    url: 'http://3.221.183.74/validaToken',
     method: 'GET',
     headers: {
       token
@@ -36,7 +36,7 @@ function obtenerProductos() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://vaso-system.tk/product',
+    url: 'http://3.221.183.74/product',
     method: 'GET',
     headers: {
       token

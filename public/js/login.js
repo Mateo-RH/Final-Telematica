@@ -17,7 +17,7 @@ function login() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://vaso-system.tk/login',
+    url: 'http://3.221.183.74/login',
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'

@@ -27,7 +27,7 @@ function registrar() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://vaso-system.tk/client',
+    url: 'http://3.221.183.74/client',
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
