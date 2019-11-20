@@ -31,10 +31,7 @@ function registrar() {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
-      token:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnQiOnsiX2lkIjoiNWRkMzQ3ZDgxYjAzYmQwNDY1YzlhZDMwIiwiZW1haWwiOiJtYXRlbyIsIm5vbWJyZSI6Im1hdGVvIiwiZWRhZCI6MjIsInNleG8iOiJNYXNjdWxpbm8iLCJjaXVkYWQiOiJNZWRlbGxpbiIsImRpcmVjY2lvbiI6ImNhbGxlIDIwIiwiZXN0YWRvQ2l2aWwiOiJTT0xURVJPL0EiLCJwcm9mZXNpb24iOiJlc3R1ZGFpbnRlIiwiX192IjowfSwiaWF0IjoxNTc0MTcxNjg4LCJleHAiOjE1NzQyMTQ4ODh9.TbcmeS7nlxXUnYuWy5Euof1U9D5Lu14hg9_LQ1hPjTs',
-      'cache-control': 'no-cache',
-      'Postman-Token': '9851523b-5e77-454a-85f1-bab43d0b93ec'
+      'Access-Control-Allow-Origin': '*'
     },
     data: {
       email,

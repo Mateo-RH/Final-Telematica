@@ -22,7 +22,8 @@ function validarToken() {
     url: 'http://3.221.183.74/validaToken',
     method: 'GET',
     headers: {
-      token
+      token,
+      'Access-Control-Allow-Origin': '*'
     }
   };
 
@@ -39,7 +40,8 @@ function obtenerProductos() {
     url: 'http://3.221.183.74/product',
     method: 'GET',
     headers: {
-      token
+      token,
+      'Access-Control-Allow-Origin': '*'
     }
   };
 

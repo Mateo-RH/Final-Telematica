@@ -20,7 +20,8 @@ function login() {
     url: 'http://3.221.183.74/login',
     method: 'POST',
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Access-Control-Allow-Origin': '*'
     },
     data: {
       email: email.value,

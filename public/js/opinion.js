@@ -15,7 +15,8 @@ function validarToken() {
     url: 'http://3.221.183.74/validaToken',
     method: 'GET',
     headers: {
-      token
+      token,
+      'Access-Control-Allow-Origin': '*'
     }
   };
 
@@ -38,7 +39,8 @@ function enviarOpinion() {
     url: `http://3.221.183.74/product/${window.productoId}`,
     method: 'PUT',
     headers: {
-      token
+      token,
+      'Access-Control-Allow-Origin': '*'
     },
     data: {
       opinion: opinion.value
