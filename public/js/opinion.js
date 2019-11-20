@@ -12,7 +12,7 @@ function validarToken() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://localhost:3000/validaToken',
+    url: 'http://ec2-54-226-29-255.compute-1.amazonaws.com:3000/validaToken',
     method: 'GET',
     headers: {
       token
@@ -35,7 +35,7 @@ function enviarOpinion() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: `http://localhost:3000/product/${window.productoId}`,
+    url: `http://ec2-54-226-29-255.compute-1.amazonaws.com:3000/product/${window.productoId}`,
     method: 'PUT',
     headers: {
       token

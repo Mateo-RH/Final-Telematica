@@ -27,7 +27,7 @@ function registrar() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://localhost:3000/client',
+    url: 'http://ec2-54-226-29-255.compute-1.amazonaws.com:3000/client',
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
