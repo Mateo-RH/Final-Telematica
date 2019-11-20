@@ -44,7 +44,7 @@ app.post('/login', cors(), (req, res) => {
   });
 });
 
-app.get('/validaToken', verificaToken, function(req, res) {
+app.get('/validaToken', [verificaToken, cors()], function(req, res) {
   let client = req.client;
   return res.json({
     error: false,
