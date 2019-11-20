@@ -19,7 +19,7 @@ function validarToken() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://ec2-54-226-29-255.compute-1.amazonaws.com:3000/validaToken',
+    url: 'http://vaso-system.tk/validaToken',
     method: 'GET',
     headers: {
       token
@@ -36,7 +36,7 @@ function obtenerProductos() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://ec2-54-226-29-255.compute-1.amazonaws.com:3000/product',
+    url: 'http://vaso-system.tk/product',
     method: 'GET',
     headers: {
       token
