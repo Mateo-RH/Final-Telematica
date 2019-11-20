@@ -33,7 +33,7 @@ app.get('/client', [verificaToken, cors()], function(req, res) {
     });
 });
 
-app.post('/client', [verificaToken, cors()], function(req, res) {
+app.post('/client',  cors(), function(req, res) {
   let body = req.body;
 
   let client = new Client({

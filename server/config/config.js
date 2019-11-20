@@ -13,7 +13,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 // =================
 let urlDB;
 let local =
-  'mongodb://ec2-3-92-199-149.compute-1.amazonaws.com:27017/VaSo&AsociadosLtda';
+  'mongodb://mongo/VaSo&AsociadosLtda';
 let online = process.env.MONGO_URI;
 process.env.NODE_ENV === 'dev' ? (urlDB = local) : (urlDB = online);
 
