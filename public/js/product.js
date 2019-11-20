@@ -37,7 +37,7 @@ function obtenerProductos() {
   var settings = {
     async: true,
     crossDomain: true,
-    url: 'http://3.221.183.74/product',
+    url: 'http://3.221.183.74/product?cantidad=100',
     method: 'GET',
     headers: {
       token,
